@@ -39,7 +39,7 @@ export class BankAccounts {
    * @param id
    */
   get(id: string): BankAccount {
-    if (false) {
+    if (true) {
       // Do something not covered
       let i = 1;
     }

@@ -5,10 +5,10 @@ node_js:
 
 script:
   - yarn test
+  - export TRAVIS_JOB_ID=507511692
+  - export TRAVIS_PULL_REQUEST=3
+  - export TRAVIS_BRANCH=master
   - cat coverage/lcov.info | ./node_modules/.bin/coveralls
 
-branches:
-  only:
-    - master
 
 cache: yarn
